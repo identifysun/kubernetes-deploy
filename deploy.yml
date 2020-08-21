@@ -1,7 +1,7 @@
 
-- include: docker.yml
-- include: ca.yml
-- include: etcd.yml
-- include: kubernetes.yml
-- include: calico.yml
-- include: kube-dns.yml
+- import_playbook: docker.yml
+- import_playbook: ca.yml
+- import_playbook: etcd.yml
+- import_playbook: kubernetes.yml
+# - import_playbook: calico.yml
+# - import_playbook: kube-dns.yml

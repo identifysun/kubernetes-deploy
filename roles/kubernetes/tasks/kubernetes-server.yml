@@ -5,6 +5,8 @@
 
 - name: "Download kubernetes server bin file"
   shell: "wget -qO- {{ KUBERNETES_SERVER_URL }}| tar xvz -C /tmp/kubernetes-server"
+  tags:
+    - download
 
 
 - name: "Install kubernetes master bin"

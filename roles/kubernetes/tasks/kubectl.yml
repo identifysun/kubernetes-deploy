@@ -5,6 +5,8 @@
 
 - name: "Download kubernetes client bin file"
   shell: "wget -qO- {{ KUBERNETES_CLIENT_URL }}| tar xvz -C /tmp/kubernetes-client"
+  tags:
+    download
 
 
 - name: "Install kubernetes client bin"

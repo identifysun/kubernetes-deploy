@@ -3,12 +3,20 @@ KUBERNETES_CLIENT_URL: https://dl.k8s.io/v1.10.3/kubernetes-client-linux-amd64.t
 KUBERNETES_SERVER_URL: https://dl.k8s.io/v1.10.3/kubernetes-server-linux-amd64.tar.gz
 CALICOCTL: https://github.com/projectcalico/calicoctl/releases/download/v3.1.3/calicoctl
 DOCKER: https://get.docker.com/builds/Linux/x86_64/docker-1.13.1.tgz
+CFSSL_URL: https://pkg.cfssl.org/R1.2
+# ETCD_URL: http://192.168.254.1:8000/kubernetes/v1.9.4/etcd-v3.2.18-linux-amd64.tar.gz
+# KUBERNETES_CLIENT_URL: http://192.168.254.1:8000/kubernetes/v1.16.14/kubernetes-client-linux-amd64.tar.gz
+# KUBERNETES_SERVER_URL: http://192.168.254.1:8000/kubernetes/v1.16.14/kubernetes-server-linux-amd64.tar.gz
+# CALICOCTL: http://192.168.254.1:8000/calico/v3.1.3/calicoctl
+# DOCKER: http://192.168.254.1:8000/docker/docker-17.12.1-ce.tgz
+# CFSSL_URL: http://192.168.254.1:8000/cfssl
 TOKEN: b5aa35577173f8a527c2fd08439ac0cc
 PROXY_PORT: 7443
 NGINX: nginx:1.13.3-alpine
 CLUSTER_CIDR: 10.233.0.0/16
 INSECURE_REGISTRY: ["go-harbor"]
 HARBOR: http://harbor.orientsoft.cn/harbor-v1.3.0/harbor-offline-installer-v1.3.0.tgz
+# HARBOR: http://192.168.254.1:8000/harbor/harbor-offline-installer-v1.5.1.tgz
 HARBOR_DOMAIN: go-harbor
 HARBOR_DATA: /data
 

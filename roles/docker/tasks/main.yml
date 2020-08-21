@@ -13,7 +13,10 @@
     remote_src: True
 
 - name: "Install docker"
-  shell: "cp -ap /tmp/docker_bin/docker/{{item}} /usr/bin/{{ item }}"
+  copy:
+    src: /tmp/docker_bin/docker/{{item}}
+    dest: /usr/bin/{{ item }}
+    remote_src: yes
   with_items:
   - docker-containerd
   - docker-containerd-shim

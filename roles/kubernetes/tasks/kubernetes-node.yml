@@ -28,7 +28,7 @@
   shell: "kubectl create clusterrolebinding kubelet-bootstrap --clusterrole=system:node-bootstrapper --user=kubelet-bootstrap"
   delegate_to: "{{ groups['masters'][0] }}"
   when: "inventory_hostname == groups['masters'][0]"
-
+  ignore_errors: True
 
 - name: "Create kubelet kubeconfig file step 1"
   shell: "kubectl config set-cluster kubernetes \
